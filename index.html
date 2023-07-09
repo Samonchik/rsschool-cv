@@ -4,8 +4,109 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="css/style.css" type="text/css"/>
 </head>
 <body>
-    
+  <header>
+    <nav>
+      <ul>
+        <li class="menusel"><a href="#aboutme">About me</a></li>
+        <li class="menusel"><a href="#contact">Contact</a></li>
+        <li class="menusel"><a href="#skills">Skills</a></li>
+        <li class="menusel"><a href="#code">Code</a></li>
+        <li class="menusel"><a href="#project">Projects</a></li>
+        <li class="menusel"><a href="#education">education</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <figure>
+      <img src="img/photo.jpeg" alt="photo">
+      <h1>Siamen Kadtsyn <br> Front-End developer</h1>
+    </figure>
+
+    <section>
+      <h2 id="aboutme">About me</h2>
+    <p id="about">Self study on EPAM .NET Development (2021Q4/BY/1), ulearn.me, head first c#.<br>
+      I am conscientious in completing assigned tasks. I always meet promised deadlines. Ready to work and make a profit.<br> I am interested in blockchain and cryptocurrencies.</p>
+    </section>
+
+    <section>
+      <h2 id="contact">Contact</h2>
+      <ul>
+        <li>Phone: +375-44-776-81-63</li>
+        <li>Location: Minsk, Belarus</li>
+        <li>Email: Kadcino@gmail.com</li>
+        <li>GitHub: [Samonchik](https://github.com/Samonchik)</li>
+        <li>Discord: samonchik#1443</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2 id="skills">Skills</h2>
+      <ul>
+        <li>Networking</li>
+        <li>Figma, Git</li>
+        <li>JavaScript</li>
+        <li>HTML/CSS</li>
+        <li>English A2</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2 id="code">Code</h2>
+      <code><pre>
+using System;
+using System.Globalization;
+public class Kata
+{
+  public static string ToCamelCase(string str)
+  {
+var textInfo = new CultureInfo("en-US").TextInfo;
+                    char[] temp = str.ToCharArray();
+                    str = textInfo.ToTitleCase(str);
+                    str = str.Replace("-", string.Empty).Replace("_", String.Empty);
+                    char[] demp = str.ToCharArray();
+                try
+                {
+                    demp[0] = temp[0];
+                }
+                catch
+                {
+                    return str;
+                }
+                string s = new string(demp);
+                str = s;
+                return str;
+  }
+}
+</pre>
+      </code>
+    </section>
+    <section>
+      <h2 id="project">Projects</h2>
+      <ul>
+
+        <li><a href="https://github.com/Samonchik/Sandwiches-menu-generator"> Sandwiches-menu-generator</a></li>
+      </ul>
+    </section>
+    <section>
+      <h2 id="education">Education</h2>
+      <p>University: Belarussian State University, Bachelor of Laws</p>
+      <ul>Courses:
+        <li><a href="https://training.epam.com/Training/Details/2665?lang=ru"> EPAM .NET Development(2021Q4/BY/1)</a></li>
+        <li><a href="https://ulearn.me/"> Ulearn.me. Основы програмирования C#</a></li>
+      </ul>
+      <p>Books: Head First C#, 4th Edition by Andrew Stellman, Jennifer Greene</p>
+      <p>English: A2 (Pre-Intermediate) tested by EPAM training portal</p>
+    </section>
+  </main>
+  <footer>
+      <a href="https://github.com/Samonchik"> My GitHub </a>
+      <p>2023</p>
+      <a href="https://rs.school/js/">
+        <img src="img/rs_school_js.svg" width="80" height="27" alt="RS_School"/>
+      </a>
+  </footer>
 </body>
 </html>
